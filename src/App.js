@@ -35,7 +35,7 @@ const App = () => {
   const onInsert = useCallback(
     (text) => {
       const todo = {
-        id: nextId,
+        id: nextId.current,
         text,
         checked: false,
       };
